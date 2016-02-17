@@ -78,8 +78,8 @@ rake test
 
 ###### Assumptions:
 
-The bottom left corner of the plateu is at (0,0).
-Protection of rovers from falling out of the plateu due to instructions is not handled.
+- The bottom left corner of the plateu is at (0,0).
+- Protection of rovers from falling out of the plateu due to instructions is not handled.
 
 
 
