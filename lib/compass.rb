@@ -1,12 +1,12 @@
 # Dir.glob('directions/*', &method(:require))
 
 module Compass
-  VALID_DIRECTIONS = [
-      "N",
-      "S",
-      "E",
-      "W"
-  ]
+  module Directions
+    N = "N"
+    E = "E"
+    W = "W"
+    S = "S"
+  end
 
   VALID_ROTATIONS = [
       "L",
