@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
-
-
 require_relative './rover'
 require_relative './plateu'
 require_relative './directions/north'
 require_relative './directions/south'
 require_relative './directions/east'
 require_relative './directions/west'
+require_relative './coordinate'
 
 class Controller
 
@@ -43,7 +42,8 @@ class Controller
   def self.build_plateu(plateu_coordinates)
     unless plateu_coordinates.empty?
       plateu_coordinates = plateu_coordinates.split(" ").map(&:to_i)
-      Plateu.new(plateu_coordinates[0], plateu_coordinates[1])
+      coordinate = Coordinate.new(plateu_coordinates)
+      Plateu.new(coordinate.x_element, coordinate.y_element)
     end
   end
 
@@ -56,7 +56,8 @@ class Controller
   def self.build_rover(rover_coordinates)
     unless rover_coordinates.empty?
       rover_coordinates = rover_coordinates.split(" ")
-      Rover.new(rover_coordinates[0].to_i, rover_coordinates[1].to_i, rover_coordinates[2].to_s)
+      coordinate = Coordinate.new(rover_coordinates)
+      Rover.new(coordinate.x_element, coordinate.y_element, coordinate.direction)
     end
   end
 end

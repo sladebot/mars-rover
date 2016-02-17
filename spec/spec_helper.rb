@@ -2,11 +2,12 @@ require 'rspec'
 
 require_relative '../dist/rover'
 require_relative '../dist/plateu'
-# require_relative '../lib/compass'
+require_relative '../lib/compass'
 require_relative '../dist/directions/north'
 require_relative '../dist/directions/south'
 require_relative '../dist/directions/east'
 require_relative '../dist/directions/west'
+require_relative '../dist/coordinate'
 
 RSpec.configure do |config|
   config.color = true
