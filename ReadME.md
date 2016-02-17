@@ -85,7 +85,7 @@ Protection of rovers from falling out of the plateu due to instructions is not h
 
 ###### Environment:
 
-OS: OS X El Capitan
-Ruby: ruby 2.0.0p645 (2015-04-13 revision 50299) [x86_64-darwin14.1.0]
+- OS: OS X El Capitan
+- Ruby: ruby 2.0.0p645 (2015-04-13 revision 50299) [x86_64-darwin14.1.0]
 
 
